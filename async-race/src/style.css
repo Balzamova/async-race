@@ -1,0 +1,142 @@
+* { margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+*, *:before,*:after {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+:focus, :active {outline: none;}
+a:focus, a:active {outline: none;}
+nav, footer, header, aside {display: block}
+html, body {
+	width: 100%;
+	height: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input, button, textarea {font-family: inherit;}
+input::-ms-clear {display: none;}
+button {cursor: pointer;}
+button::-moz-focus-inner {padding: 0; border: 0;}
+a, a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+ul li {list-style: none;}
+img {vertical-align: top;}
+
+body {
+  background-color: black;
+  color: blueviolet;
+}
+
+.garage-page,
+.score-page {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+}
+
+.garage-page.none,
+.score-page.none {
+  display: none;
+}
+
+.navigation,
+.form,
+.controls,
+.pagination,
+.pagination.score {
+  width: 350px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination,
+.pagination-score {
+  justify-content: start;
+}
+
+.button {
+  width: 85px;
+  height: 30px;
+  margin: 5px;
+  background: rgba(13, 253, 253, 0.801);
+  border-radius: 5px;
+
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button:hover {
+  background: rgba(252, 4, 240, 0.986);
+}
+
+.btn-select.active {
+  background: rgba(252, 4, 240, 0.986);
+}
+
+.btn-race,
+.btn-reset {
+  width: 115px;
+  background: rgba(252, 4, 240, 0.986);
+}
+
+.btn-race:hover,
+.btn-reset:hover {
+  background: rgba(245, 103, 238, 0.986);
+}
+
+.navigation > .button,
+.pagination > .button,
+.pagination-score > .button {
+  background: rgba(248, 252, 4, 0.986);
+}
+
+.navigation > .button:hover,
+.pagination > .button:hover,
+.pagination-score > .button:hover {
+  background: rgba(143, 241, 98, 0.842);
+}
+
+.navigation > .button.active {
+  border: 3px solid rgba(94, 247, 24, 0.911);
+}
+
+.garage {
+  width: 100%;
+  margin: 20px 0;
+}
+
+@media (max-width: 500px) {
+  .button {
+    text-transform: none;
+  }
+
+  .navigation,
+  .form,
+  .controls,
+  .pagination,
+  .pagination.score {
+    width: 100%;
+  }
+
+  .pagination,
+  .pagination-score {
+    justify-content: space-between;
+  }
+}
